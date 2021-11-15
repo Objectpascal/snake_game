@@ -1,0 +1,102 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Demo'
+  ClientHeight = 305
+  ClientWidth = 575
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 336
+    Top = 7
+    Width = 217
+    Height = 272
+    BevelOuter = bvNone
+    TabOrder = 0
+    object Label2: TLabel
+      Left = 0
+      Top = 0
+      Width = 217
+      Height = 25
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'MAP SCAN'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Layout = tlCenter
+      ExplicitWidth = 110
+    end
+    object Memo1: TMemo
+      Left = 0
+      Top = 25
+      Width = 217
+      Height = 247
+      Align = alClient
+      Alignment = taCenter
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 8
+    Top = 7
+    Width = 320
+    Height = 272
+    BevelOuter = bvNone
+    TabOrder = 1
+    object PaintBox1: TPaintBox
+      Left = 0
+      Top = 25
+      Width = 320
+      Height = 247
+      Align = alClient
+      ExplicitLeft = 16
+      ExplicitTop = -7
+      ExplicitWidth = 297
+      ExplicitHeight = 233
+    end
+    object Label1: TLabel
+      Left = 0
+      Top = 0
+      Width = 320
+      Height = 25
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'GAME'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Layout = tlCenter
+      ExplicitWidth = 62
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 80
+    OnTimer = Timer1Timer
+    Left = 72
+    Top = 32
+  end
+end
